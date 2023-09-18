@@ -1,19 +1,29 @@
 Lo que sigue es una explicación sucinta para lograr el ordenamiento de las cazatalentos. 
-Utilizamos el promedio normalizado como estimador de la esperanza cuando se dispone de
+Utilizamos el promedio normalizado como estimador de la esperanza de enceste de la jugadora cuando se dispone de
 los datos para poder calcularlo.
 Suponemos distribuciones normales por lo que aproximadamente la mitad de las veces obtendrá
 un valor de aciertos superior a la media, y otra mitad de veces logrará valores inferiores.
-La esperanza de la cz6 es 0,8 (80 aciertos en 100 tiros).
-Está es la de mayor esperanza, seguida por la cz8 0,79 (790 tiros en 1000).
-Tercera queda la cz3 con 0,775 (155 en 200) teniendo dos jugadoras para comparar, cuarta cz7 con 0,772 
-(386 acieros en 500 tiros realizados por 5 jugadoras), quinta cz5 con 0,7467 (224 en 300 de una misma jugadora),
-sexta está la cz9, la deshonesta, con 0,701 (701 aciertos en 1000 en 10 rondas de 100). 
+Suponemos que en los distintos grupos tiran jugadoras con igual porcentaje, probabilidad de acertar y 
+que los diferentes resultados son producto de la buena y de la mala suerte que cada una tenga en las
+multiples comparaciones con las demás.
+La esperanza de la Cz6 es 0,8 (80 aciertos en 100 tiros). No suponemos que haya tenido ni buena ni mala suerte,
+no hay contra que resultado o jugafora chequear. Está es la de mayor esperanza, seguida por la Cz8 0,7954 
+(875 tiros en 1100).
+Tercera queda la Cz3 con 0,775 (155 en 200) teniendo dos jugadoras para comparar, una con más suerte que la otra.
+Cuarta Cz7 con 0,772 (386 acieros en 500 tiros realizados por 5 jugadoras).
+Quinta Cz5 con 0,73 (730 en 1000 tiros de 5 jugadoras), acá la primera ronda la descarto para el cálculo de la
+media por ser los resultados más favorecidos de las múltilples comparaciones entre las 100 jugadoras. 
+Sexta está la Cz9, la deshonesta, con 0,701 (701 aciertos en 1000 en 10 rondas de 100). 
 Cambiando la dinámica comparativa por no contar con todas las realizaciones de los tiros de las 100 
-jugadoras como para realizar un promedio, ubicamos a la septima y octava, en esos puestos quedan las cz1 y cz2.
-Tienen ambas menos de 0,7, tomando el zbasket_04 como base observamos que cuando tiran 100 jugadoras (con p=0,7 de
-encestar) 100 tiros, la ganadora tenía mas de  80 en 0,586 (586 veces sobre 1000) y en 0,854 
-(854 sobre 1000 resspectivamente para 100 y 200 tiradoras).
+jugadoras como para realizar un promedio, realizamos el experimento de con la probabilidad de cz9 en los
+escenarios de las cazatalentos 1,2 y 4 cuan probables son esas realizaciones para esa probabilidad de enceste.
+O sea para una dada probabilidad, la de la última cazatalentos analizada, p=701, se realizan tres escenarios y 
+se ordenan en base a cuan probable sea que ocurran. Cz4 se daría sólo en el 53 de 1000, 
+Cz2 en 145/1000 y Cz1 en 384 de 1000.
+Asi ubicamos a la septima y octava, en esos puestos quedan las Cz1 y Cz2, para finalizar con Cz4.
+Tienen ambas tres menos de 0,7. Tomando el zbasket_04 (semilla 550007) como base observamos que cuando tiran 100
+jugadoras (con p=0,701 de encestar), cada una 100 tiros, la ganadora tenía más de 80 aciertos más de la mitad 
+de las veces (616 veces sobre 1000) y en 0,855 (834 sobre 1000 resspectivamente para 100 y 200 tiradoras).
 Quedando para el final cz4, habiendo las jugadoras tirado solo 10 tiros, las multiples comparaciones de las 100
-realizaciones arrojaron como ganadora a quien acertó 9 tiros. Si la probabilidad de enceste de cada una de 100 
-jugadoras es 0,6, y cada una tira 10 tiros, en un 98,9 %(989 de 1000) de las realizaciones la ganadora acierta
-por lo menos 9 tiros.
+realizaciones arrojaron como ganadora a quien acertó 9 tiros. Si las 100 tuvieran p=0,701 de acertar, en 947
+de 1000 la ganadora obtiene 10 aciertos. O sea
