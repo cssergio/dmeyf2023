@@ -175,7 +175,7 @@ for (i in 1:20) {
 
 
 	# Agrego columna con las predicciones de cada semilla
-	col_name <- paste0("semilla_", semilla[i])
+	col_name <- paste0("semilla_", semillas[i])
 	predicciones[, (col_name) := prediccion] 
 
 	print(paste0("Iteracion ",i, " finalizada"))
