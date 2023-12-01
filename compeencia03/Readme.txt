@@ -12,3 +12,4 @@ top_rate <- 0.325814945
 other_rate <- 0.307901019
 feature_fraction <- 0.662296515444177
 Este último script realiza un semillerío con 20 semillas promediando por numero de cliente las probabilidades que arroja la predicción del modelo para 202109, luego se ordenan de mayor a menor y se realiza el envío a los primeros 10500 clientes.
+Tambien está subida la bayesiana obtenida luego de correr el script z823_bayesiana_goss_us01.r y el archivo para subir a kaggle generado por el script z823_finsl_goss.r para 10500 envios de corte.
